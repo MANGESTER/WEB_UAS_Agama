@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belajar Doa & Dzikir Harian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">☪</span>
+        <span class="logo-text">Doa & Dzikir<span class="logo-sub">Harian</span></span>
+      </div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#doa" class="nav-link">Doa Harian</a></li>
+          <li><a href="#dzikir" class="nav-link">Dzikir</a></li>
+          <li><a href="#keutamaan" class="nav-link">Keutamaan</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      <h1 class="hero-title">Belajar Doa &amp; Dzikir <span class="highlight">Harian</span></h1>
+      <p class="hero-subtitle">
+        Perkuat hubunganmu dengan Allah melalui doa dan dzikir setiap hari.
+        Tersedia bacaan Arab, latin, dan terjemahan lengkap.
+      </p>
+      <div class="hero-ayat">
+        <p class="ayat-arab">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+        <p class="ayat-latin">Alā bidzikrillaahi tathma'innul qulūb</p>
+        <p class="ayat-arti">"Ingatlah, hanya dengan mengingat Allah hati menjadi tenang." — (QS. Ar-Ra'd: 28)</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#doa" class="btn btn-primary">Mulai Belajar</a>
+        <a href="#dzikir" class="btn btn-outline">Lihat Dzikir</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>12+</strong><span>Doa Harian</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>6+</strong><span>Dzikir Penting</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>Arab + Latin</strong><span>+ Terjemahan</span></div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll ke bawah</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doa">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Doa Harian</span>
+        <h2 class="section-title">Doa-Doa dalam Kehidupan Sehari-hari</h2>
+        <p class="section-desc">Hafalkanlah doa-doa berikut untuk diamalkan setiap hari agar hidup lebih berkah</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="pagi">Pagi</button>
+        <button class="filter-btn" data-filter="makan">Makan & Minum</button>
+        <button class="filter-btn" data-filter="aktivitas">Aktivitas</button>
+        <button class="filter-btn" data-filter="malam">Malam</button>
+      </div>
+
+      <div class="doa-grid" id="doaGrid">
+
+        <div class="doa-card" data-kategori="pagi">
+          <div class="card-badge pagi">Pagi</div>
+          <h3 class="card-title">Doa Bangun Tidur</h3>
+          <div class="arab-text">اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَحْيَانَا بَعْدَمَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرُ</div>
+          <div class="latin-text">Alhamdulillāhilladzī ahyānā ba'damā amātanā wa ilaihin nusyūr</div>
+          <div class="arti-text">"Segala puji bagi Allah yang telah menghidupkan kami setelah mematikan kami, dan hanya kepada-Nya kami kembali."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Setelah bangun tidur</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Membaca doa ini saat bangun tidur merupakan bentuk syukur kepada Allah yang telah mengembalikan nyawa kita setelah tidur (kematian kecil). Dianjurkan dibaca setiap pagi hari.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="pagi">
+          <div class="card-badge pagi">Pagi</div>
+          <h3 class="card-title">Doa Masuk Kamar Mandi</h3>
+          <div class="arab-text">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ</div>
+          <div class="latin-text">Allāhumma innī a'ūdzubika minal khubutsi wal khabā'its</div>
+          <div class="arti-text">"Ya Allah, aku berlindung kepada-Mu dari setan laki-laki dan setan perempuan."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Sebelum masuk toilet</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Kamar mandi adalah tempat bersemayamnya jin, sehingga dianjurkan membaca doa ini sebelum masuk. Dibaca dalam hati (tidak diucapkan keras) karena tempat tersebut tidak layak untuk berzikir keras.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="makan">
+          <div class="card-badge makan">Makan</div>
+          <h3 class="card-title">Doa Sebelum Makan</h3>
+          <div class="arab-text">اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ</div>
+          <div class="latin-text">Allâhumma bârik lanâ fîmâ razaqtanâ waqinâ ‘adzâban nâr(i)</div>
+          <div class="arti-text">"Ya Allah, berkahilah apa yang telah Engkau anugerahkan kepada kami dan jagalah kami dari siksa neraka."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Sebelum makan</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Membaca bismillah sebelum makan mengundang keberkahan pada makanan dan menjauhkan setan dari ikut makan bersama kita. Jika lupa di awal, baca: "Bismillāhi awwalahu wa ākhirahu".</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="makan">
+          <div class="card-badge makan">Makan</div>
+          <h3 class="card-title">Doa Sesudah Makan</h3>
+          <div class="arab-text">اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِيْنَ</div>
+          <div class="latin-text">Alhamdulillāhilladzī ath'amanā wa saqānā wa ja'alanā muslimīn</div>
+          <div class="arti-text">"Segala puji bagi Allah yang telah memberi kami makan, minum, dan menjadikan kami orang Islam."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Sesudah makan</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Merupakan bentuk syukur kepada Allah atas rezeki yang telah diberikan. Sangat dianjurkan untuk selalu membaca doa ini agar makanan yang dimakan menjadi berkah.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="aktivitas">
+          <div class="card-badge aktivitas">Aktivitas</div>
+          <h3 class="card-title">Doa Keluar Rumah</h3>
+          <div class="arab-text">بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ</div>
+          <div class="latin-text">Bismillāhi tawakkaltu 'alallāhi wa lā hawla wa lā quwwata illā billāh</div>
+          <div class="arti-text">"Dengan nama Allah, aku bertawakal kepada Allah. Tiada daya dan kekuatan kecuali dengan pertolongan Allah."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Saat keluar rumah</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Siapa yang membaca doa ini saat keluar rumah, maka dikatakan kepadanya: "Kamu telah diberi petunjuk, dicukupi, dan dijaga." Setan pun akan menjauh darinya. (HR. Abu Dawud)</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="aktivitas">
+          <div class="card-badge aktivitas">Aktivitas</div>
+          <h3 class="card-title">Doa Masuk Masjid</h3>
+          <div class="arab-text">اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ</div>
+          <div class="latin-text">Allāhummaf-tahlī abwāba rahmatik</div>
+          <div class="arti-text">"Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Masuk masjid/musholla</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Doa ini dibaca dengan kaki kanan terlebih dahulu saat memasuki masjid. Allah akan membukakan pintu rahmat-Nya bagi siapa yang membacanya dengan penuh keyakinan.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="aktivitas">
+          <div class="card-badge aktivitas">Aktivitas</div>
+          <h3 class="card-title">Doa Keluar Masjid</h3>
+          <div class="arab-text">اللَّهُمَّ افْتَحْ لِي أَبْوَابَ فَضْلِكَ</div>
+          <div class="latin-text">Allāhummaf-tahlī abwāba fadhlika.</div>
+          <div class="arti-text">"Ya Allah, sesungguhnya aku memohon kepada-Mu sebagian dari karunia-Mu."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Keluar masjid/musholla</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Doa ini dibaca ketika keluar dari masjid dengan mengutamakan kaki kiri terlebih dahulu.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="malam">
+          <div class="card-badge malam">Malam</div>
+          <h3 class="card-title">Doa Sebelum Tidur</h3>
+          <div class="arab-text">بِسْمِكَ االلّٰهُمَّ اَحْيَا وَبِاسْمِكَ اَمُوْتُ</div>
+          <div class="latin-text">Bismikallaahuma ahyaa wa bismika amuutu</div>
+          <div class="arti-text">"Dengan menyebut nama-Mu, Ya Allah, aku hidup dan dengan menyebut nama-Mu aku mati."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Sebelum tidur</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Tidur diibaratkan kematian kecil. Dengan doa ini kita menyerahkan diri sepenuhnya kepada Allah. Dianjurkan juga membaca Ayat Kursi sebelum tidur untuk mendapat perlindungan Allah.</p>
+          </div>
+        </div>
+
+        <div class="doa-card" data-kategori="malam">
+          <div class="card-badge malam">Malam</div>
+          <h3 class="card-title">Doa Ketika Bermimpi Buruk</h3>
+          <div class="arab-text">أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ</div>
+          <div class="latin-text">A'ūdzubillāhi minasy-syaithānir rajīm</div>
+          <div class="arti-text">"Aku berlindung kepada Allah dari setan yang terkutuk."</div>
+          <div class="card-footer">
+            <span class="waktu-label">⏰ Saat mimpi buruk</span>
+            <button class="btn-audio" onclick="toggleDetail(this)">Lihat Manfaat</button>
+          </div>
+          <div class="card-detail hidden">
+            <p>Jika bermimpi buruk, bacalah ta'awudz ini lalu meludah kecil ke kiri sebanyak tiga kali, kemudian berpindah posisi tidur. Mimpi buruk berasal dari setan dan tidak boleh diceritakan kepada orang lain. (HR. Muslim)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="dzikir" class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge green">Dzikir Harian</span>
+        <h2 class="section-title">Dzikir Pagi &amp; Sore</h2>
+        <p class="section-desc">Amalkan dzikir berikut setiap pagi setelah Subuh dan sore setelah Ashar</p>
+      </div>
+
+      <div class="dzikir-grid">
+
+        <div class="dzikir-card">
+          <div class="dzikir-header">
+            <span class="dzikir-num">1</span>
+            <div>
+              <h3>Tasbih</h3>
+              <span class="dzikir-count">33× setiap selesai shalat</span>
+            </div>
+          </div>
+          <div class="arab-text">سُبْحَانَ اللهِ</div>
+          <div class="latin-text">Subhānallāh</div>
+          <div class="arti-text">"Maha Suci Allah"</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog1"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count1">0</span>/33
+              <button class="btn-dzikir" onclick="hitungDzikir(1,33,'count1','prog1')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count1','prog1')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dzikir-card">
+          <div class="dzikir-header">
+            <span class="dzikir-num">2</span>
+            <div>
+              <h3>Tahmid</h3>
+              <span class="dzikir-count">33× setiap selesai shalat</span>
+            </div>
+          </div>
+          <div class="arab-text">اَلْحَمْدُ لِلّٰهِ</div>
+          <div class="latin-text">Alhamdulillāh</div>
+          <div class="arti-text">"Segala puji bagi Allah"</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog2"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count2">0</span>/33
+              <button class="btn-dzikir" onclick="hitungDzikir(2,33,'count2','prog2')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count2','prog2')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dzikir-card">
+          <div class="dzikir-header">
+            <span class="dzikir-num">3</span>
+            <div>
+              <h3>Takbir</h3>
+              <span class="dzikir-count">33× setiap selesai shalat</span>
+            </div>
+          </div>
+          <div class="arab-text">اَللهُ أَكْبَرُ</div>
+          <div class="latin-text">Allāhu Akbar</div>
+          <div class="arti-text">"Allah Maha Besar"</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog3"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count3">0</span>/33
+              <button class="btn-dzikir" onclick="hitungDzikir(3,33,'count3','prog3')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count3','prog3')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dzikir-card">
+          <div class="dzikir-header">
+            <span class="dzikir-num">4</span>
+            <div>
+              <h3>Istighfar</h3>
+              <span class="dzikir-count">Minimal 33× per hari</span>
+            </div>
+          </div>
+          <div class="arab-text">أَسْتَغْفِرُ اللهَ</div>
+          <div class="latin-text">Astaghfirullāh</div>
+          <div class="arti-text">"Aku memohon ampun kepada Allah"</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog4"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count4">0</span>/33
+              <button class="btn-dzikir" onclick="hitungDzikir(4,33,'count4','prog4')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count4','prog4')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dzikir-card dzikir-wide">
+          <div class="dzikir-header">
+            <span class="dzikir-num">5</span>
+            <div>
+              <h3>Shalawat Nabi</h3>
+              <span class="dzikir-count">Minimal 10× pagi dan petang</span>
+            </div>
+          </div>
+          <div class="arab-text">اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</div>
+          <div class="latin-text">Allāhumma shalli 'alā Muhammadin wa 'alā āli Muhammad</div>
+          <div class="arti-text">"Ya Allah, limpahkanlah shalawat kepada Nabi Muhammad dan kepada keluarga Nabi Muhammad."</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog5"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count5">0</span>/10
+              <button class="btn-dzikir" onclick="hitungDzikir(5,10,'count5','prog5')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count5','prog5')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dzikir-card dzikir-wide">
+          <div class="dzikir-header">
+            <span class="dzikir-num">6</span>
+            <div>
+              <h3>Hauqalah</h3>
+              <span class="dzikir-count">Dibaca saat menghadapi kesulitan</span>
+            </div>
+          </div>
+          <div class="arab-text">لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيْمِ</div>
+          <div class="latin-text">Lā hawla wa lā quwwata illā billāhil 'aliyyil 'azhīm</div>
+          <div class="arti-text">"Tiada daya dan kekuatan kecuali dengan pertolongan Allah Yang Maha Tinggi lagi Maha Agung."</div>
+          <div class="dzikir-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:0%" id="prog6"></div>
+            </div>
+            <div class="counter-row">
+              <span id="count6">0</span>/33
+              <button class="btn-dzikir" onclick="hitungDzikir(6,33,'count6','prog6')">+1</button>
+              <button class="btn-reset" onclick="resetDzikir('count6','prog6')">Reset</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="keutamaan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge gold">Keutamaan</span>
+        <h2 class="section-title">Manfaat &amp; Keutamaan Berdoa dan Berzikir</h2>
+        <p class="section-desc">Allah telah menjanjikan banyak kebaikan bagi hamba-Nya yang rajin berdoa dan berzikir</p>
+      </div>
+
+      <div class="keutamaan-grid">
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">🤲</div>
+          <h3>Senjata Orang Mukmin</h3>
+          <p>Doa adalah ibadah. Nabi SAW bersabda: "Doa adalah senjata orang mukmin, tiang agama, dan cahaya langit dan bumi." (HR. Al-Hakim)</p>
+        </div>
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">💚</div>
+          <h3>Ketenangan Hati</h3>
+          <p>Dzikir kepada Allah menjadi sumber ketenangan jiwa. Hati yang gelisah akan menemukan kedamaiannya melalui zikir yang ikhlas.</p>
+        </div>
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">🛡️</div>
+          <h3>Perlindungan dari Bahaya</h3>
+          <p>Doa-doa pagi dan sore merupakan perisai dari gangguan setan, penyakit, dan mara bahaya sepanjang hari dan malam.</p>
+        </div>
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">✨</div>
+          <h3>Penghapus Dosa</h3>
+          <p>Istighfar yang dibaca dengan sungguh-sungguh dan penuh penyesalan merupakan penghapus dosa dan pembuka pintu taubat.</p>
+        </div>
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">📈</div>
+          <h3>Pengangkat Derajat</h3>
+          <p>Setiap kali kita berzikir, para malaikat mencatat dan mengangkat derajat kita di sisi Allah SWT hingga hari kiamat.</p>
+        </div>
+        <div class="keutamaan-card">
+          <div class="keutamaan-icon">🌙</div>
+          <h3>Dikabulkan Allah</h3>
+          <p>Allah berjanji akan mengabulkan doa hamba-Nya. "Berdoalah kepada-Ku, niscaya Aku kabulkan." (QS. Ghafir: 60)</p>
+        </div>
+      </div>
+
+      <div class="waktu-mustajab">
+        <h3 class="wm-title">⏰ Waktu-Waktu yang Sangat Dianjurkan untuk Berdoa</h3>
+        <div class="wm-grid">
+          <div class="wm-item"><span class="wm-icon">🌅</span><div><strong>Sepertiga Malam Terakhir</strong><p>Waktu paling mustajab. Allah turun ke langit dunia dan menanti hamba yang berdoa.</p></div></div>
+          <div class="wm-item"><span class="wm-icon">🕌</span><div><strong>Antara Adzan &amp; Iqamah</strong><p>Doa di antara dua azan tidak akan ditolak. Manfaatkan setiap waktu shalat.</p></div></div>
+          <div class="wm-item"><span class="wm-icon">🌧️</span><div><strong>Saat Hujan Turun</strong><p>Saat hujan turun adalah waktu mustajab untuk memanjatkan doa-doa terbaik.</p></div></div>
+          <div class="wm-item"><span class="wm-icon">🙏</span><div><strong>Saat Sujud</strong><p>Keadaan paling dekat antara hamba dengan Tuhannya adalah saat sujud dalam shalat.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge purple">Tentang</span>
+        <h2 class="section-title">Tentang Website Ini</h2>
+        <p class="section-desc">Informasi mengenai tujuan dan latar belakang pembuatan website ini</p>
+      </div>
+      <div class="tentang-wrapper">
+        <div class="tentang-text">
+          <h3>Latar Belakang</h3>
+          <p>
+            Website <strong>Belajar Doa & Dzikir Harian</strong> dibuat sebagai media pembelajaran
+            berbasis digital untuk memudahkan umat muslim dalam mengakses, mempelajari,
+            dan mengamalkan doa serta dzikir sehari-hari.
+          </p>
+          <p>
+            Di era digital ini, akses terhadap ilmu agama perlu diperluas melalui platform
+            yang mudah digunakan oleh semua kalangan, mulai dari anak-anak hingga orang dewasa.
+          </p>
+          <h3>Tujuan</h3>
+          <ul>
+            <li>Menyediakan referensi doa harian yang lengkap dengan Arab, latin, dan terjemahan</li>
+            <li>Memudahkan umat muslim mengamalkan dzikir harian</li>
+            <li>Meningkatkan kesadaran akan pentingnya berdoa dan berzikir</li>
+            <li>Menjadi media dakwah digital yang bermanfaat</li>
+          </ul>
+          <h3>Sumber Referensi</h3>
+          <ul>
+            <li>Al-Qur'an Al-Karim</li>
+            <li>Hadits Shahih Bukhari dan Muslim</li>
+            <li>Hisnul Muslim (Kumpulan Doa dari Al-Qur'an dan Sunnah) — Sa'id bin Ali bin Wahf Al-Qahthani</li>
+            <li>Riyadhus Shalihin — Imam Nawawi</li>
+          </ul>
+        </div>
+        <div class="tentang-card">
+          <div class="biodata">
+            <div class="bio-avatar">👤</div>
+            <h3>Informasi Tugas</h3>
+            <table class="bio-table">
+              <tr><td>Mata Kuliah</td><td>Pendidikan Agama Islam</td></tr>
+              <tr><td>Tema</td><td>Doa & Dzikir Harian</td></tr>
+              <tr><td>Jenis</td><td>Project Website</td></tr>
+              <tr><td>Tahun</td><td>2025/2026</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">☪</span>
+            <span class="logo-text" style="color:#fff;">Doa & Dzikir<span class="logo-sub" style="color:#b5e5d0;">Harian</span></span>
+          </div>
+          <p class="footer-tagline">Media pembelajaran doa dan dzikir islami untuk kehidupan sehari-hari.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#doa">Doa Harian</a></li>
+            <li><a href="#dzikir">Dzikir</a></li>
+            <li><a href="#keutamaan">Keutamaan</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Sumber</h4>
+          <ul>
+            <li>Al-Qur'an Al-Karim</li>
+            <li>Hadits Shahih</li>
+            <li>Hisnul Muslim</li>
+            <li>Riyadhus Shalihin</li>
+          </ul>
+        </div>
+        <div class="footer-ayat">
+          <h4>Renungan</h4>
+          <p class="footer-arab">وَاذْكُرُوا اللهَ كَثِيْرًا لَعَلَّكُمْ تُفْلِحُوْنَ</p>
+          <p class="footer-arti">"Dan ingatlah Allah sebanyak-banyaknya agar kamu beruntung." — QS. Al-Anfal: 45</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Belajar Doa & Dzikir Harian — Tugas Project Mata Kuliah Pendidikan Agama Islam</p>
+        <p class="footer-hadits">بَلِّغُوا عَنِّي وَلَوْ آيَةً — "Sampaikan dariku meskipun satu ayat." (HR. Bukhari)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
