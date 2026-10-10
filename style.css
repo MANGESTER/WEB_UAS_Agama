@@ -1,4 +1,3 @@
-/* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -37,7 +36,6 @@ body {
 
 .hidden { display: none !important; }
 
-/* LAYER 1: HEADER & NAVIGASI */
 #header {
   position: sticky;
   top: 0;
@@ -121,7 +119,6 @@ body {
   transition: all var(--transition);
 }
 
-/* LAYER 2: HERO SECTION */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -142,7 +139,6 @@ body {
     radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
 }
 
-/* Ornamen bintang-bintang Islam */
 #hero::after {
   content: '✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧';
   position: absolute;
@@ -280,7 +276,6 @@ body {
   50% { transform: translateY(6px); }
 }
 
-/* SECTION SHARED STYLES */
 section { padding: 80px 0; }
 .section-alt { background: var(--abu-terang); }
 
@@ -319,7 +314,6 @@ section { padding: 80px 0; }
   line-height: 1.8;
 }
 
-/* LAYER 3A: DOA HARIAN */
 .filter-tabs {
   display: flex;
   gap: 8px;
@@ -455,7 +449,6 @@ section { padding: 80px 0; }
   border-left: 3px solid var(--emas);
 }
 
-/* LAYER 3B: DZIKIR HARIAN */
 .dzikir-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -554,7 +547,6 @@ section { padding: 80px 0; }
 }
 .btn-reset:hover { border-color: #e0a030; color: var(--emas); }
 
-/*LAYER 4: KEUTAMAAN */
 .keutamaan-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -607,7 +599,6 @@ section { padding: 80px 0; }
 .wm-item strong { display: block; font-size: 14px; font-weight: 600; color: var(--emas); margin-bottom: 5px; }
 .wm-item p { font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.7; }
 
-/* LAYER 4B: TENTANG */
 .tentang-wrapper {
   display: grid;
   grid-template-columns: 1fr 340px;
@@ -657,7 +648,6 @@ section { padding: 80px 0; }
 .bio-table td:first-child { color: var(--teks-muted); width: 110px; font-weight: 500; }
 .bio-table td:last-child { color: var(--teks-utama); font-weight: 500; }
 
-/* LAYER 5: FOOTER */
 #footer {
   background: linear-gradient(135deg, #042d1e 0%, #0a5e45 100%);
   color: rgba(255,255,255,0.85);
@@ -730,7 +720,6 @@ section { padding: 80px 0; }
   margin-top: 4px;
 }
 
-/* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
   .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--abu); padding: 12px 16px; gap: 0; }
   .nav-links.open { display: flex; }
@@ -758,7 +747,6 @@ section { padding: 80px 0; }
   .footer-top { grid-template-columns: 1fr; }
 }
 
-/* ANIMASI FADE IN */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
