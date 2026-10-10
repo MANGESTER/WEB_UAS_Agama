@@ -1,4 +1,3 @@
-/*1. HEADER SCROLL EFFECT*/
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
@@ -10,7 +9,6 @@ window.addEventListener('scroll', () => {
   updateActiveNav();
 });
 
-/* 2. HAMBURGER MENU (MOBILE) */
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.querySelector('.nav-links');
 
@@ -24,7 +22,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
-/*3. ACTIVE NAV LINK berdasarkan posisi scroll */
 function updateActiveNav() {
   const sections = document.querySelectorAll('section[id]');
   const scrollPos = window.scrollY + 120;
@@ -44,7 +41,6 @@ function updateActiveNav() {
   });
 }
 
-/* 4. FILTER DOA BERDASARKAN KATEGORI */
 const filterBtns = document.querySelectorAll('.filter-btn');
 const doaCards   = document.querySelectorAll('.doa-card');
 
@@ -73,7 +69,6 @@ filterBtns.forEach(btn => {
   });
 });
 
-/* 5. TOGGLE DETAIL / FAEDAH DOA */
 function toggleDetail(btn) {
   const card   = btn.closest('.doa-card');
   const detail = card.querySelector('.card-detail');
@@ -91,7 +86,6 @@ function toggleDetail(btn) {
   }
 }
 
-/* 6. COUNTER DZIKIR INTERAKTIF*/
 const counters = {};
 
 function hitungDzikir(id, maxCount, countElId, progElId) {
@@ -125,7 +119,6 @@ function resetDzikir(countElId, progElId) {
   document.getElementById(progElId).style.background = 'linear-gradient(90deg, #0d7a5a, #1aab7e)';
 }
 
-/* 7. NOTIFIKASI TOAST */
 function showNotifikasi(pesan) {
   const old = document.querySelector('.toast-notif');
   if (old) old.remove();
@@ -166,7 +159,6 @@ function showNotifikasi(pesan) {
   }, 3500);
 }
 
-/* 8. ANIMASI FADE IN SAAT SCROLL */
 const elementsToAnimate = [
   '.doa-card',
   '.dzikir-card',
@@ -199,7 +191,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-/* 9. SMOOTH SCROLL untuk tombol hero */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -211,7 +202,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* 10. TAMPILKAN WAKTU SEKARANG (untuk sapaan di hero) */
 function getSapaan() {
   const jam = new Date().getHours();
   if (jam >= 4  && jam < 12) return '🌅 Selamat Pagi';
